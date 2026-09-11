@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Página personal de Danny Burguete"
+    >
+
+    <title>Danny Burguete | Links</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- QR Code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fondo animado -->
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+
+    <main class="container">
+
+        <!-- PERFIL -->
+
+        <section class="profile">
+
+            <div class="avatar">
+                <span>DB</span>
+            </div>
+
+            <div class="verified">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h1>Danny Burguete</h1>
+
+            <p class="username">
+                @dnnxy_rtx
+            </p>
+
+            <p class="description">
+                Bienvenido a mi página 👋
+            </p>
+
+        </section>
+
+
+        <!-- BOTONES -->
+
+        <section class="links">
+
+            <!-- Instagram -->
+
+            <a
+                href="https://www.instagram.com/dnnxy_rtx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link instagram"
+            >
+
+                <div class="link-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div class="link-text">
+                    <strong>Instagram</strong>
+                    <small>@dnnxy_rtx</small>
+                </div>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </a>
+
+
+            <!-- WhatsApp -->
+
+            <a
+                href="https://wa.me/529341220860?text=Hola%20Danny%2C%20vi%20tu%20p%C3%A1gina%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link whatsapp"
+            >
+
+                <div class="link-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div class="link-text">
+                    <strong>WhatsApp</strong>
+                    <small>Envíame un mensaje</small>
+                </div>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- BOTONES DE ACCIONES -->
+
+        <section class="actions">
+
+            <button id="shareButton" class="action-button">
+
+                <i class="fa-solid fa-share-nodes"></i>
+
+                <span>Compartir</span>
+
+            </button>
+
+
+            <button id="copyButton" class="action-button">
+
+                <i class="fa-solid fa-link"></i>
+
+                <span id="copyText">
+                    Copiar enlace
+                </span>
+
+            </button>
+
+
+            <button id="qrButton" class="action-button">
+
+                <i class="fa-solid fa-qrcode"></i>
+
+                <span>Mi QR</span>
+
+            </button>
+
+        </section>
+
+
+        <!-- QR -->
+
+        <section id="qrSection" class="qr-section">
+
+            <div class="qr-card">
+
+                <button
+                    id="closeQR"
+                    class="close-qr"
+                    aria-label="Cerrar QR"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h2>Escanea mi QR</h2>
+
+                <p>
+                    Comparte mi perfil fácilmente
+                </p>
+
+                <div id="qrcode"></div>
+
+                <small>
+                    Escanea con la cámara de tu teléfono
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                Hecho por
+                <strong>Danny Burguete</strong>
+            </p>
+
+            <span>
+                © <span id="year"></span>
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Toast -->
+
+    <div id="toast" class="toast">
+
+        <i class="fa-solid fa-check"></i>
+
+        <span id="toastText">
+            Copiado
+        </span>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
