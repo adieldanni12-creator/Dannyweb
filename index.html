@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,9 +16,17 @@
 
     <title>Danny Burguete | Links</title>
 
-    <!-- Fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -50,7 +59,6 @@
     <main class="container">
 
         <!-- PERFIL -->
-
         <section class="profile">
 
             <div class="avatar">
@@ -74,12 +82,11 @@
         </section>
 
 
-        <!-- BOTONES -->
-
+        <!-- LINKS -->
         <section class="links">
 
-            <!-- Instagram -->
 
+            <!-- INSTAGRAM -->
             <a
                 href="https://www.instagram.com/dnnxy_rtx/"
                 target="_blank"
@@ -101,8 +108,7 @@
             </a>
 
 
-            <!-- WhatsApp -->
-
+            <!-- WHATSAPP -->
             <a
                 href="https://wa.me/529341220860?text=Hola%20Danny%2C%20vi%20tu%20p%C3%A1gina%20web"
                 target="_blank"
@@ -123,23 +129,136 @@
 
             </a>
 
+
+            <!-- TIKTOK -->
+            <a
+                href="https://www.tiktok.com/@TU_USUARIO"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link tiktok"
+            >
+
+                <div class="link-icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+
+                <div class="link-text">
+                    <strong>TikTok</strong>
+                    <small>@TU_USUARIO</small>
+                </div>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </a>
+
+
+            <!-- LLAMAR -->
+            <a
+                href="tel:+529341220860"
+                class="link phone"
+            >
+
+                <div class="link-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="link-text">
+                    <strong>Llamar</strong>
+                    <small>934 122 0860</small>
+                </div>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+            </a>
+
+
         </section>
 
 
-        <!-- BOTONES DE ACCIONES -->
+        <!-- GALERÍA -->
+        <section class="gallery-section">
 
+            <h2>
+                <i class="fa-solid fa-images"></i>
+                Galería
+            </h2>
+
+            <p class="gallery-description">
+                Algunas fotos
+            </p>
+
+
+            <div class="gallery">
+
+                <div
+                    class="gallery-item"
+                    data-image="images/foto1.jpg"
+                >
+                    <img
+                        src="images/foto1.jpg"
+                        alt="Foto 1"
+                    >
+                </div>
+
+
+                <div
+                    class="gallery-item"
+                    data-image="images/foto2.jpg"
+                >
+                    <img
+                        src="images/foto2.jpg"
+                        alt="Foto 2"
+                    >
+                </div>
+
+
+                <div
+                    class="gallery-item"
+                    data-image="images/foto3.jpg"
+                >
+                    <img
+                        src="images/foto3.jpg"
+                        alt="Foto 3"
+                    >
+                </div>
+
+
+                <div
+                    class="gallery-item"
+                    data-image="images/foto4.jpg"
+                >
+                    <img
+                        src="images/foto4.jpg"
+                        alt="Foto 4"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTONES -->
         <section class="actions">
 
-            <button id="shareButton" class="action-button">
+            <button
+                id="shareButton"
+                class="action-button"
+            >
 
                 <i class="fa-solid fa-share-nodes"></i>
 
-                <span>Compartir</span>
+                <span>
+                    Compartir
+                </span>
 
             </button>
 
 
-            <button id="copyButton" class="action-button">
+            <button
+                id="copyButton"
+                class="action-button"
+            >
 
                 <i class="fa-solid fa-link"></i>
 
@@ -150,32 +269,64 @@
             </button>
 
 
-            <button id="qrButton" class="action-button">
+            <button
+                id="qrButton"
+                class="action-button"
+            >
 
                 <i class="fa-solid fa-qrcode"></i>
 
-                <span>Mi QR</span>
+                <span>
+                    Mi QR
+                </span>
 
             </button>
 
         </section>
 
 
-        <!-- QR -->
+        <!-- MODAL GALERÍA -->
+        <section
+            id="imageModal"
+            class="image-modal"
+        >
 
-        <section id="qrSection" class="qr-section">
+            <button
+                id="closeImage"
+                class="close-image"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Imagen ampliada"
+            >
+
+        </section>
+
+
+        <!-- MODAL QR -->
+        <section
+            id="qrSection"
+            class="qr-section"
+        >
 
             <div class="qr-card">
 
                 <button
                     id="closeQR"
                     class="close-qr"
-                    aria-label="Cerrar QR"
                 >
+
                     <i class="fa-solid fa-xmark"></i>
+
                 </button>
 
-                <h2>Escanea mi QR</h2>
+                <h2>
+                    Escanea mi QR
+                </h2>
 
                 <p>
                     Comparte mi perfil fácilmente
@@ -193,16 +344,18 @@
 
 
         <!-- FOOTER -->
-
         <footer>
 
             <p>
                 Hecho por
-                <strong>Danny Burguete</strong>
+                <strong>
+                    Danny Burguete
+                </strong>
             </p>
 
             <span>
-                © <span id="year"></span>
+                ©
+                <span id="year"></span>
             </span>
 
         </footer>
@@ -210,9 +363,11 @@
     </main>
 
 
-    <!-- Toast -->
-
-    <div id="toast" class="toast">
+    <!-- TOAST -->
+    <div
+        id="toast"
+        class="toast"
+    >
 
         <i class="fa-solid fa-check"></i>
 
@@ -223,9 +378,9 @@
     </div>
 
 
-    <!-- JavaScript -->
-
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
 </html>
+```
